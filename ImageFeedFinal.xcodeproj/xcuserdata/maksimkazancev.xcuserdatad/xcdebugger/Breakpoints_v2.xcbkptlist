@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DA011971-1572-41DD-A112-B8C23B97E66F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagesList/ImagesListCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ImagesListCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED - 8da7b3e3bed6792f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedFinal.ImagesListCell.dateLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ImageFeedFinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimkazancev/Desktop/Programm/ImageFeedFinal/ImagesList/ImagesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED - b185c932fcb99d5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedFinal.ImagesListCell.dateLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ImageFeedFinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimkazancev/Desktop/Programm/ImageFeedFinal/ImagesList/ImagesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED - fda3730a4f24f02a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedFinal.ImagesListCell.dateLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "ImageFeedFinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimkazancev/Desktop/Programm/ImageFeedFinal/ImagesList/ImagesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED - 9c181a853d7ec305"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedFinal.ImagesListCell.dateLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ImageFeedFinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimkazancev/Desktop/Programm/ImageFeedFinal/ImagesList/ImagesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED - 4fd1464bc9039347"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedFinal.ImagesListCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; ImageFeedFinal.ImagesListCell"
+                  moduleName = "ImageFeedFinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimkazancev/Desktop/Programm/ImageFeedFinal/ImagesList/ImagesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "239">
+               </Location>
+               <Location
+                  uuid = "76DCBF2A-F44F-4904-9A11-8BC1B75526ED - 5046a769aee854e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedFinal.ImagesListCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ImageFeedFinal.ImagesListCell&gt;"
+                  moduleName = "ImageFeedFinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimkazancev/Desktop/Programm/ImageFeedFinal/ImagesList/ImagesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
