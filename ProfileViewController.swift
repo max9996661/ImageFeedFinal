@@ -9,6 +9,9 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+            return .lightContent
+        }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +65,7 @@ class ProfileViewController: UIViewController {
         view.addSubview(descriptionLabel)
 // MARK: - setting logoutButton
         let logoutButton: UIButton = UIButton.systemButton(with: UIImage(named: "ExitEmage")!, target: self, action: #selector(logoutButtonAction))
-        logoutButton.tintColor = .red
+        logoutButton.tintColor = UIColor(named: "YP Red")
         logoutButton.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(logoutButton)

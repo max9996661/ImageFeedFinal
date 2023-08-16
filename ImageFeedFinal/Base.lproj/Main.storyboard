@@ -21,8 +21,8 @@
                         <color key="selectedImageTintColor" name="YP White"/>
                     </tabBar>
                     <connections>
-                        <segue destination="A7c-0v-Jnf" kind="relationship" relationship="viewControllers" id="26K-Rb-j3N"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="N8r-yp-vAO"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FHv-vh-kY8"/>
+                        <segue destination="A7c-0v-Jnf" kind="relationship" relationship="viewControllers" id="cjF-Ub-b6H"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58R-pt-zeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,10 +158,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-y3-uF6" userLabel="sharidButton">
-                                <rect key="frame" x="181.66666666666666" y="784" width="30" height="30"/>
+                                <rect key="frame" x="171.66666666666666" y="764" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="8V2-Kz-rfY"/>
-                                    <constraint firstAttribute="height" constant="30" id="9vP-kH-izn"/>
+                                    <constraint firstAttribute="width" constant="50" id="8V2-Kz-rfY"/>
+                                    <constraint firstAttribute="height" constant="50" id="9vP-kH-izn"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="sharing"/>
