@@ -9,6 +9,9 @@ import UIKit
 
 final class SIngleImageViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+            return .lightContent
+        }
 
     var image: UIImage! {
         didSet {
