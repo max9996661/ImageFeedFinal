@@ -13,20 +13,10 @@ protocol AuthViewControllerDelegate: AnyObject {
 
 final class AuthViewController: UIViewController {
     
-//    private weak var delegateAuth: OAuth2ServiceProtocol?
-//    private weak var delegateWBViewController: WebViewControllerDelegate?
     weak var delegate: AuthViewControllerDelegate?
+    private let ShowWebViewSegueIdentifier = "ShowWebView"
     
-//    init(delegateAuth: OAuth2ServiceProtocol, delegateWBViewController: WebViewControllerDelegate) {
-//        self.delegateAuth = delegateAuth
-//        self.delegateWBViewController = delegateWBViewController
-//
-//        super.init(nibName: nil, bundle: nil)
-//    }
-    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    @IBOutlet weak var enterButton: UIButton!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
             return .lightContent
@@ -54,29 +44,20 @@ final class AuthViewController: UIViewController {
     }
     
     func settingAuthButton() {
-        let authButton: UIButton = {
-            let button = UIButton()
-            button.addTarget(
-                self,
-                action: #selector(showWebViewVC),
-                for: .touchUpInside)
-            button.backgroundColor = UIColor(named: "YP White")
-            button.setTitle("Войти", for: .normal)
-            button.setTitleColor(UIColor(named: "YP Black"), for: .normal)
-            button.titleLabel?.font = UIFont(name: "SF Pro", size: 17)
-            button.titleLabel?.textAlignment = .center
-            button.layer.cornerRadius = 16
-            button.translatesAutoresizingMaskIntoConstraints = false
-            return button
-        }()
-        
-        view.addSubview(authButton)
+            enterButton.backgroundColor = UIColor(named: "YP White")
+            enterButton.setTitle("Войти", for: .normal)
+            enterButton.setTitleColor(UIColor(named: "YP Black"), for: .normal)
+            enterButton.titleLabel?.font = UIFont(name: "SF Pro", size: 17)
+            enterButton.titleLabel?.textAlignment = .center
+            enterButton.layer.cornerRadius = 16
+            enterButton.translatesAutoresizingMaskIntoConstraints = false
+
         
         NSLayoutConstraint.activate([
-            authButton.widthAnchor.constraint(equalToConstant: 343),
-            authButton.heightAnchor.constraint(equalToConstant: 48),
-            authButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            authButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -90)
+            enterButton.widthAnchor.constraint(equalToConstant: 343),
+            enterButton.heightAnchor.constraint(equalToConstant: 48),
+            enterButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            enterButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -90)
         
         ])
     }
@@ -90,17 +71,20 @@ final class AuthViewController: UIViewController {
         
     }
     
-    @objc func showWebViewVC() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        viewController.delegate = self
-        
-        self.show(viewController, sender: nil)
-        
-    }
     
-}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == ShowWebViewSegueIdentifier {
+                guard let webViewViewController = segue.destination as? WebViewViewController else {
+                    assertionFailure("Failed to prepare for \(ShowWebViewSegueIdentifier)")
+                    return
+                }
+                webViewViewController.delegate = self
+            } else {
+                super.prepare(for: segue, sender: sender)
+            }
+        }
+    }
+
 
 extension AuthViewController: WebViewControllerDelegate {
     
